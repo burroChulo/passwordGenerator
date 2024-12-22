@@ -40,8 +40,8 @@ class passwordGen():
                 listOfChoices.append(4)
         
         for i in range(length):
-            penis = random.choice(listOfChoices)
-            match penis:
+            pw = random.choice(listOfChoices)
+            match pw:
                 case 1:
                     if addUppers:
                         password += self.genUppercase()
@@ -53,8 +53,7 @@ class passwordGen():
                         password += self.genNums()
                 case 4:
                     if addSpecs:
-                        password += self.genSpecialChars()
-            
+                        password += self.genSpecialChars()    
         return password
 
 
